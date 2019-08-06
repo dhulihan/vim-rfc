@@ -2,8 +2,6 @@
 
 Lightweight RFC fetcher and syntax highlighting for vim.
 
-** WIP - DO NOT USE YET **
-
 * `:RFC 527`
 
 ## Installation
