@@ -11,7 +11,14 @@ let g:loaded_rfc = 1
 " 'RFC <number>' open the requested RFC number in a new window
 function! RFC(number)
   if a:number =~ '^[0-9]'
+    " fetch the rfc file
     silent exe ":e https://www.ietf.org/rfc/rfc" . a:number . ".txt"
+
+    " set syntax on the rfc txt file
+    setf rfc
+
+    " redraw screen to avoid ugly artifacts
+    redraw!
   else
     echoerr a:number . " is not a number"
   endif
