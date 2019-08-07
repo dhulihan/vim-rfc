@@ -1,6 +1,8 @@
 # vim-rfc
 
-Lightweight RFC fetcher and syntax highlighting for vim.
+Lightweight RFC viewer and syntax highlighting for vim.
+
+![](preview.gif)
 
 * `:RFC 527`
 
